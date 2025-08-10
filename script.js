@@ -82,7 +82,7 @@ The output should be a JSON object with two keys: "code" (string containing the 
         // IMPORTANT for hackathon judges:
         // For local development, paste your API key here inside the quotes.
         // It should look something like: const apiKey = "AIzaSyB_YOUR_KEY_HERE";
-        const apiKey = "AIzaSyA0reQDr4s8a9gzsKfOe0PjjV_45tcxllY";
+        const apiKey = "";
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
         // Implemented exponential backoff for robust API calls during the hackathon.
