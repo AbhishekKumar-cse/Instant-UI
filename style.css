@@ -220,3 +220,11 @@ pre {
     display: none;
 }
 
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+    body {
+        padding: 1rem;
+    }
+}
