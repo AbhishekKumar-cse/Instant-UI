@@ -143,7 +143,4 @@ The output should be a JSON object with two keys: "code" (string containing the 
     });
 
     // Add event listener for the copy button
-    copyButton.addEventListener('click', () => {
-        copyToClipboard(generatedCodeElement.textContent);
-    });
-});
+    
