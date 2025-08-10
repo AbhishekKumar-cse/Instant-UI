@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI UI Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center">
+            <h1>GenAI UI Builder</h1>
+            <p>Describe and generate beautiful UI components on the fly.</p>
+        </header>
+
+        <div class="card glass-effect">
+            <label for="prompt-input" class="label-text">Describe your UI:</label>
+            <textarea
+                id="prompt-input"
+                placeholder="e.g., 'A modern login form with email and password fields, a remember me checkbox, and a vibrant sign in button.'"
+            ></textarea>
+            <button id="generate-button" class="btn">
+                <span>Generate Code</span>
+            </button>
+        </div>
+
+        <div id="error-message" class="error-box hidden"></div>
+        
+        <div id="result-container" class="hidden">
+            <div class="card glass-effect">
+                <div class="card-header">
+                    <h2>Generated Code</h2>
+                    <button id="copy-button" class="btn-copy">Copy Code</button>
+                </div>
+                <pre><code id="generated-code"></code></pre>
+            </div>
+
+            <div class="card glass-effect" id="accessibility-container">
+                <h2>Accessibility Suggestions</h2>
+                <ul id="accessibility-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
