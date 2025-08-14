@@ -46,4 +46,4 @@ Given more time, we would love to implement the following features:
 
 👥 Team
 
-This project was built by [Your Name(s)] for the Frontend With GenAI Hackathon.
+This project was built by Team ReactifAI  for the Frontend With GenAI Hackathon.
